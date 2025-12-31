@@ -1,0 +1,41 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "29N29U7V47.com.mesoft.mewinbooking"
+        ],
+        "paths": [
+          "*"
+        ],
+        "components": [
+          {
+            "/": "/",
+            "comment": "Matches URL with the root path /"
+          },
+          {
+            "/": "/san/*",
+            "comment": "Matches any URL with a path that starts with /details/ followed by an item ID"
+          },
+          {
+            "/": "/chi-tiet-xe-ve/*",
+            "comment": "Chi tiet cua 1 ve"
+          },
+          {
+            "/": "/xe-ve/*",
+            "comment": "Danh sach xe ve cua 1 san"
+          },
+          {
+            "/": "/lich-ngay/*",
+            "comment": "Vao phan lich ngay cua 1 san"
+          },
+          {
+            "/": "/dat-dich-vu/*/*",
+            "comment": "Vao phan dat dich vu cua 1 san"
+          }
+        ]
+      }
+    ]
+  }
+}

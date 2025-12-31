@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="MeWin - Đặt lịch sân thể thao">
+  <meta property="og:image" content="/icons/Icon-192.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MeWin Booking">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="google-signin-client_id"
+    content="237743878479-m8ro5hd0060833g08k96prsi1rp4spv2.apps.googleusercontent.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>MeWin - Đặt lịch</title>
+  <link rel="manifest" href="manifest.json">
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+  <!-- <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2796537184";
+  </script>
+  -->
+  <script src="flutter.js?version=16" defer></script>
+  <style id="splash-screen-style">
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      background-color: #ffffff;
+      background-image: url("splash/img/light-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #000000;
+        background-image: url("splash/img/dark-background.png");
+      }
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+      z-index: 1;
+    }
+
+    .splash-icon {
+      position: absolute;
+      top: 64px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 64px;
+      width: 200px;
+      background-image: url("splash/img/icon_logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 200;
+    }
+
+    .loading-dots {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 3;
+    }
+
+    .loading-dots .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #444;
+      animation: bounce 1.4s infinite ease-in-out both;
+    }
+
+    .loading-dots .dot:nth-child(1) {
+      animation-delay: -0.32s;
+    }
+
+    .loading-dots .dot:nth-child(2) {
+      animation-delay: -0.16s;
+    }
+
+    .loading-dots .dot:nth-child(3) {
+      animation-delay: 0;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="splash-icon"></div>
+
+  <div class="loading-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <script src="flutter_bootstrap.js" async="">
+    window.onload = function () {
+      const url = window.location.href;
+      if (url) {
+        // Chuyển URL cho Flutter
+        window.flutter_inappwebview?.callHandler('handleDeeplink', url);
+      }
+    };
+  </script>
+
+  <!-- <script src="main.dart.js?version=10" type="application/javascript"></script> -->
+  <!-- <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script> -->
+
+  <script>
+    let splashRemoved = false;
+    function removeSplashScreen() {
+      if (splashRemoved) return;
+      splashRemoved = true;
+      // Xoá loading dots & icon
+      document.querySelector(".loading-dots")?.remove();
+      document.querySelector(".splash-icon")?.remove();
+
+      // Xoá lớp phủ linear gradient
+      const splashStyle = document.getElementById("splash-screen-style");
+      splashStyle?.remove();
+
+      // Reset background về trong suốt để Flutter render
+      document.body.style.background = "transparent";
+    }
+
+    window.addEventListener("flutter-first-frame", removeSplashScreen);
+
+    // window.onload = function () {
+    //   setTimeout(removeSplashScreen, 4000);
+    // };
+  </script>
+
+  <!-- <script>
+    var serviceWorkerVersion = null;
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+
+    if ('serviceWorker' in navigator) {
+      // Service workers are supported. Use them.
+      window.addEventListener('load', function () {
+        // Wait for registration to finish before dropping the <script> tag.
+        // Otherwise, the browser will load the script multiple times,
+        // potentially different versions.
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        navigator.serviceWorker.register(serviceWorkerUrl)
+          .then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener('statechange', () => {
+                if (serviceWorker.state == 'activated') {
+                  console.log('Installed new service worker.');
+                  loadMainDartJs();
+                }
+              });
+            }
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing ?? reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log('New service worker available.');
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              // Existing service worker is still good.
+              console.log('Loading app from service worker.');
+              loadMainDartJs();
+            }
+          });
+
+        // If service worker doesn't succeed in a reasonable amount of time,
+        // fallback to plaint <script> tag.
+        setTimeout(() => {
+          if (!scriptLoaded) {
+            console.warn(
+              'Failed to load app from service worker. Falling back to plain <script> tag.',
+            );
+            loadMainDartJs();
+          }
+        }, 4000);
+      });
+    } else {
+      // Service workers not supported. Just drop the <script> tag.
+      loadMainDartJs();
+    }
+  </script> -->
+</body>
+
+</html>

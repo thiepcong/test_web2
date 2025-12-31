@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mesoft.bookingmewin",
+      "sha256_cert_fingerprints": [
+        "50:B0:EF:0F:55:16:35:B2:51:26:1D:81:30:62:8B:CA:B0:89:69:EB:02:FE:BA:50:F7:F3:43:48:E9:2E:E8:9A",
+        "40:42:BD:2E:04:4E:FE:C5:4C:AA:13:A7:E7:A2:E8:65:E9:22:08:43:DD:A8:AA:0B:44:17:33:9A:15:7C:14:78",
+        "CA:9C:AE:96:6D:57:00:D0:D8:A1:AC:97:85:01:49:20:3D:DF:F5:A4:8F:5E:33:2B:6A:49:3A:23:A4:49:4F:07"
+      ]
+    }
+  }
+]
