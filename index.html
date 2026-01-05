@@ -18,7 +18,7 @@
   <meta http-equiv="expires" content="0" />
   <meta http-equiv="pragma" content="no-cache" />
   <meta name="google-signin-client_id"
-    content="237743878479-m8ro5hd0060833g08k96prsi1rp4spv2.apps.googleusercontent.com">
+    content="237743878479-r4n4vvov1ssn0m0u9d469027aoq3jeh8.apps.googleusercontent.com">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
@@ -30,7 +30,7 @@
 
   <!-- <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1060649339";
+    const serviceWorkerVersion = "2102082225";
   </script>
   -->
   <script src="flutter.js?version=16" defer></script>
@@ -142,7 +142,7 @@
       }
     };
   </script>
-
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <!-- <script src="main.dart.js?version=10" type="application/javascript"></script> -->
   <!-- <script>
     window.addEventListener('load', function(ev) {
@@ -184,6 +184,30 @@
     // };
   </script>
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCB9PqAPBMgD2ZXylHIvdvb-WuNNedLiNo",
+      authDomain: "mewin-booking.firebaseapp.com",
+      databaseURL: "https://mewin-booking-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "mewin-booking",
+      storageBucket: "mewin-booking.firebasestorage.app",
+      messagingSenderId: "237743878479",
+      appId: "1:237743878479:web:ed7f549e0809130975953a",
+      measurementId: "G-F1Q887H44W"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <!-- <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
