@@ -71611,28 +71611,24 @@ while(true)switch(s){case 0:s=2
 return A.p($.bN().$1$0(t.he).p8(0,"bookingLocal"),$async$MC)
 case 2:return A.r(null,r)}})
 return A.t($async$MC,r)},
-H6(){var s=0,r=A.u(t.E),q,p=2,o=[],n,m,l,k,j,i,h
+H6(){var s=0,r=A.u(t.E),q,p=2,o=[],n,m,l,k,j
 var $async$H6=A.o(function(a,b){if(a===1){o.push(b)
 s=p}while(true)switch(s){case 0:p=4
 n=A.bUA(null)
-k=A.d0(null,null,null,B.f7)
-k.a="GET"
+l=A.d0(null,null,null,B.f7)
+l.a="GET"
 s=7
-return A.p(J.c9_(n,"https://get.geojs.io/v1/ip/country.json",null,null,null,k,null,t.z),$async$H6)
-case 7:m=b
-if(m.c===200){j=J.am(m.a,"country")
-q=j
-s=1
-break}q=null
+return A.p(J.c9_(n,"https://get.geojs.io/v1/ip/country.json",null,null,null,l,null,t.z),$async$H6)
+case 7:q="AU"
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-h=o.pop()
-l=A.a1(h)
-A.bQ("Error: "+A.c(l))
+j=o.pop()
+m=A.a1(j)
+A.bQ("Error: "+A.c(m))
 q=null
 s=1
 break
