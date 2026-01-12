@@ -3,14 +3,14 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "6c4fa07b349883c460cfe963d2fc6723",
+const RESOURCES = {"flutter_bootstrap.js": "e094ffd7ccc1031f993bf333a64bf8c7",
 "version.json": "e536b13cdf243662ebdb7ae08cd22547",
 "splash/img/light-background.png": "31263507840197dc7abcc6db9ca2bd14",
 "splash/img/icon_logo.png": "d20b1bb981901eee65c18387dd98c08b",
 "splash/img/dark-background.png": "31263507840197dc7abcc6db9ca2bd14",
-"index.html": "134cb11a388f2363efb4029b4482440c",
-"/": "134cb11a388f2363efb4029b4482440c",
-"main.dart.js": "07497dd1ea965526d37702b0fe908dd4",
+"index.html": "08f11fcea22b8de60c8b1e3b1dbd734d",
+"/": "08f11fcea22b8de60c8b1e3b1dbd734d",
+"main.dart.js": "41b2073b49836c6835792db2559bddc5",
 ".well-known/apple-app-site-association": "ce2e3cac54fc70cab99364cc143c2ad1",
 ".well-known/assetlinks.json": "378c558487351719ef0f343b53683c57",
 "Web.config": "51998a27bbd7487b093c618da04bbb80",
