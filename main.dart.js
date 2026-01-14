@@ -77702,34 +77702,32 @@ if(g==null)g=0
 if(j==null)j=0
 j=A.cm(Math.abs(g),j===1)
 if(n==null)n="\u20ab".toLowerCase()
-h=A.fJ(!1,!0,new A.bql(s,b),new A.C(0,0,0,8*p),f,o,k,j+n,f,h.G(A.f(A.e(a)).a))
-n=$.d().gl()
+g=t.p
+h=A.a([l,A.fJ(!1,!0,new A.bql(s,b),new A.C(0,0,0,8*p),f,o,k,j+n,f,h.G(A.f(A.e(a)).a)),new A.R(f,24*$.d().gl(),f,f)],g)
 p=d.dx
-if(p===10&&r<600){d=$.d().gl()
-p=$.d().gm()
-p=A.aP("assets/icons/ic_ticket_line.svg",new A.bA(A.f(A.e(a)).a2,B.C,f,B.F),16*d,16*p)
+if(p===10&&r<600){o=$.d().gl()
+n=$.d().gm()
+n=A.aP("assets/icons/ic_ticket_line.svg",new A.bA(A.f(A.e(a)).a2,B.C,f,B.F),16*o,16*n)
 A.al(a,B.n,i).toString
-s=A.ed(f,f,8,0,f,A.w("Payment",f,"thanh_toan",A.a([],m),f),p,f,new A.bqm(s,r),B.aJ,f,f,f)
-d=s}else{o=d.x
-k=A.c3E(a,p,o)
-if(p!==2)j=o===1
-else j=!0
-if(j){$.I.toString
-m=A.w("Review",f,"danh_gia",A.a([],m),f)}else{if(p!==-2)j=p===-3
-else j=!0
-if(j){A.al(a,B.n,i).toString
+B.c.J(h,A.a([A.ed(f,f,8,0,f,A.w("Payment",f,"thanh_toan",A.a([],m),f),n,f,new A.bqm(s,r),B.aJ,f,f,f),new A.R(f,12*$.d().gl(),f,f)],g))}o=d.x
+n=A.c3E(a,p,o)
+if(p!==2)l=o===1
+else l=!0
+if(l){$.I.toString
+m=A.w("Review",f,"danh_gia",A.a([],m),f)}else{if(p!==-2)l=p===-3
+else l=!0
+if(l){A.al(a,B.n,i).toString
 m=A.w("Reschedule",f,"dat_lai",A.a([],m),f)}else{A.al(a,B.n,i).toString
-m=A.w("Cancel Booking",f,"huy_dat_lich",A.a([],m),f)}}j=A.bQp(d)?A.f(A.e(a)).d:A.f(A.e(a)).z
-i=!0
+m=A.w("Cancel Booking",f,"huy_dat_lich",A.a([],m),f)}}l=A.bQp(d)?A.f(A.e(a)).d:A.f(A.e(a)).z
+k=!0
 if(p!==2)if(p!==-2)if(p!==-3)p=o===1
-else p=i
-else p=i
-else p=i
+else p=k
+else p=k
+else p=k
 if(p)p=A.f(A.e(a)).a
 else p=A.bQp(d)?A.f(A.e(a)).c:A.f(A.e(a)).Q
-s=A.ed(p,f,8,0,f,m,k,f,A.bQp(d)?f:new A.bqn(s,b,a),B.aJ,f,j,f)
-d=s}s=t.p
-s=A.i9(f,f,f,f,f,f,f,A.a([A.b7(A.as(A.a([l,h,new A.R(f,24*n,f,f),d],s),B.l,B.an,B.m,0),1)],s),f)
+h.push(A.ed(p,f,8,0,f,m,n,f,A.bQp(d)?f:new A.bqn(s,b,a),B.aJ,f,l,f))
+s=A.i9(f,f,f,f,f,f,f,A.a([A.b7(A.as(h,B.l,B.an,B.m,0),1)],g),f)
 d=s
 break $label0$0}s=this.a
 p=$.d().gl()
@@ -85367,30 +85365,28 @@ if(h==null)h=0
 if(k==null)k=0
 k=A.cm(Math.abs(h),k===1)
 if(o==null)o="\u20ab".toLowerCase()
-i=A.fJ(!1,!0,new A.bFX(d,b),new A.C(0,0,0,8*r),g,p,l,k+o,g,i.G(A.f(A.e(a)).a))
-o=$.d().gl()
+h=t.p
+i=A.a([m,A.fJ(!1,!0,new A.bFX(d,b),new A.C(0,0,0,8*r),g,p,l,k+o,g,i.G(A.f(A.e(a)).a)),new A.R(g,24*$.d().gl(),g,g)],h)
 r=e.go
-if(r===10&&s<600){e=$.d().gl()
-r=$.d().gm()
-r=A.aP("assets/icons/ic_ticket_line.svg",new A.bA(A.f(A.e(a)).a2,B.C,g,B.F),16*e,16*r)
+if(r===10&&s<600){p=$.d().gl()
+o=$.d().gm()
+o=A.aP("assets/icons/ic_ticket_line.svg",new A.bA(A.f(A.e(a)).a2,B.C,g,B.F),16*p,16*o)
 A.al(a,B.n,j).toString
-d=A.ed(g,g,8,0,g,A.w("Payment",g,"thanh_toan",A.a([],n),g),r,g,new A.bFY(d,s),B.aJ,g,g,g)
-e=d}else{p=A.c3E(a,r,g)
+B.c.J(i,A.a([A.ed(g,g,8,0,g,A.w("Payment",g,"thanh_toan",A.a([],n),g),o,g,new A.bFY(d,s),B.aJ,g,g,g),new A.R(g,12*$.d().gl(),g,g)],h))}p=A.c3E(a,r,g)
 if(r===2){$.I.toString
-n=A.w("Review",g,"danh_gia",A.a([],n),g)}else{if(r!==-2)l=r===-3
-else l=!0
-if(l){A.al(a,B.n,j).toString
-n=A.w("Reschedule",g,"dat_lai",A.a([],n),g)}else{A.al(a,B.n,j).toString
-n=A.w("Cancel Booking",g,"huy_dat_lich",A.a([],n),g)}}l=A.bQq(e)?A.f(A.e(a)).d:A.f(A.e(a)).z
-k=!0
+o=A.w("Review",g,"danh_gia",A.a([],n),g)}else{if(r!==-2)o=r===-3
+else o=!0
+if(o){A.al(a,B.n,j).toString
+o=A.w("Reschedule",g,"dat_lai",A.a([],n),g)}else{A.al(a,B.n,j).toString
+o=A.w("Cancel Booking",g,"huy_dat_lich",A.a([],n),g)}}n=A.bQq(e)?A.f(A.e(a)).d:A.f(A.e(a)).z
+m=!0
 if(r!==2)if(r!==-2)r=r===-3
-else r=k
-else r=k
+else r=m
+else r=m
 if(r)r=A.f(A.e(a)).a
 else r=A.bQq(e)?A.f(A.e(a)).c:A.f(A.e(a)).Q
-d=A.ed(r,g,8,0,g,n,p,g,A.bQq(e)?new A.bFZ():new A.bG_(d,b,a),B.aJ,g,l,g)
-e=d}d=t.p
-d=A.i9(g,g,g,g,g,g,g,A.a([A.b7(A.as(A.a([m,i,new A.R(g,24*o,g,g),e],d),B.l,B.an,B.m,0),1)],d),g)
+i.push(A.ed(r,g,8,0,g,o,p,g,A.bQq(e)?new A.bFZ():new A.bG_(d,b,a),B.aJ,g,n,g))
+d=A.i9(g,g,g,g,g,g,g,A.a([A.b7(A.as(i,B.l,B.an,B.m,0),1)],h),g)
 e=d
 break $label0$0}d=this.a
 r=$.d().gl()
